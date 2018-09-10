@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 6, 2018, 9:19:13 AM
+    Author     : timotin
+*/
+
+h2>span{
+    border-bottom: 2px blue dashed;
+}
+header{
+    /*border: 5px solid red;*/
+    text-align: right;
+    background-color:#A8F0F0;
+}
+header > h2{
+    /*border: 5px solid orange;*/
+    font-size:14pt;
+}
+div img{
+    float:right;
+    margin:0 0 1em 1em;
+    align-content: center;
+
+}
+div {
+    border: 4px solid #C2E9E9;
+    border-radius:15px;
+    background-color:#E8FBFB;
+    padding: 5px;
+    margin-top: 10px;
+    overflow:auto;
+}
+body>div#total{
+
+    border: 10px solid white;
+    background-color:white;
+    margin-left:10%;
+    margin-right:10%;
+
+}
+footer{
+    margin:0% 10%;
+}
+body{
+    background-image: url('http://mumstudents.org/cs472/2018-09-RS/Labs/2/background.gif');
+    background-repeat:repeat;
+}
+nav{
+    background-color:#A8F0F0;
+    border:teal 4px solid;   
+    /*border-radius: 15px 25px 14px 30px;*/
+    
+    
+     -webkit-border-top-left-radius: 
+     20px 10px;
+  -webkit-border-top-right-radius: 
+     10px 20px;
+  -webkit-border-bottom-right-radius: 
+     30px 10px;
+  -webkit-border-bottom-left-radius: 
+     40px 30px ;
+
+  border-top-left-radius: 20px 10px;
+  border-top-right-radius: 10px 20px ;
+  border-bottom-left-radius: 30px 10px ;
+  border-bottom-right-radius: 40px 30px ;
+}
+@media screen and (min-width:800px) {
+    nav {
+        float: left; 
+        width: 25%; 
+        position:relative;
+        padding-left: 5px;
+        margin-top: 5px;
+
+    } 
+    section { 
+        margin-left: 29%; 
+    }
+}
+@media screen and (max-width:799px) {
+    nav li{ 
+        display: inline; 
+        margin-right: 1em;
+    }
+}

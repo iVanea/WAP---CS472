@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Apply for a Capital One Card</title>
+        <link rel="icon" type="image/ico" href="images/fav.ico"/>
+        <meta charset="utf-8">
+        <link href="capital.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="logoFirst">
+            <span class="log1"><img src="images/clf.png" alt="Capital One" width="120" height="45"/></span>
+            <span class="log"><img class ="log2" src="images/mcl.png" width="200" height="40" alt="Master Card"/></span>
+        </div>
+        <div class="banner">
+            <span id="imgsqso"><img id="wordsqso" src = "images/qso.png" alt="quick silver one"/></span>
+            <p id="textsqso">Earn unlimited 1.5% cash back on every purchase, every day</p>
+            <br>
+        </div>
+        <div id="underbanner">
+            <div id="centerButtons">
+            <span class="locked"><img src = "images/lock.png" alt="locked"/>SECURITY</span>
+            <span class="faq"><img src="images/question.png" alt="questions">FAQ</span>
+            </div>
+            
+            <p class="viewed">View Card Summary</p>
+            <div id="hidde">
+            <dl>
+                <dt>PURCHASE APR</dt>
+                <dd>22.97% - 26.97% variable APR</dd>
+
+                <dt>ANNUAL FEE</dt>
+                <dd>$39</dd>
+
+                <dt>TRANSFER INFO</dt>
+                <dd>22.97% - 26.97% variable APR; No Transfer Fee</dd>
+
+                <dt>BONUS OFFER</dt>
+                <dd>None</dd>
+
+                <dt>REWARDS INFO</dt>
+                <dd>Earn unlimited 1.5% cash back on every purchase, every day.</dd>
+
+                <dt>CARD NETWORK</dt>
+                <dd>Mastercard</dd>
+            </dl>
+        </div>
+        </div>
+        
+        <div class="main">
+            <form action="" method="POST">
+                <p class=headline>Personal Information</p>
+
+                <div id="visa">
+                    <img src="images/qocard.png"  alt="quick silver card"/>
+                </div>
+
+                <div class = "firstRow">
+                    <label>FIRST NAME</label>
+                    <div>
+                        <input type="text" name="firstname" pattern="[a-zA-Z]{2,15}" title=" first name should only contain only letters. e.g. John"/>
+                    </div>
+
+                    <div id="decIM">
+                        <label>IM</label> <br/>
+                        <input type="text" name="mi" pattern =" " title="Please enter your IM"/>
+                    </div>
+
+                    <div>
+                        <label>LAST NAME</label>
+                        <input type="text" name="lastname" pattern="[a-zA-Z]{2,15}" title="last name should only contain only letters. e.g. Sami"
+                               />
+                    </div>
+                </div>
+
+                <div class ="secondRow">
+                    <label>DATE OF BIRTH</label>
+                    <div class="date">
+                        <input type="text" name="birthdate"  pattern =" " title="Please enter your birth date" />
+                    </div>
+
+
+                    <div class="social">
+                        <label>SOCIAL SECURITY NUMBER</label>
+                        <input type="text" name="SSN" pattern="(!^\d{3}-\d{2}-\d{4}$" title="Please enter your social security number" />
+                    </div>
+
+                </div>
+
+                <label>ARE YOU A U.S CITIZEN?</label>
+                <label><input type="radio" name="cc" value="Yes" /> Yes</label>
+                <label><input type="radio" name="cc" value="No" /> No</label>
+
+                <div class="linkedQQQ">
+                    <a href="#">WHY ARE YOU ASKING ME THIS?</a>
+                </div>
+
+                <br/>
+                <hr>
+
+                <p class="headline">Contact Information</p>
+
+                <div class="contactInfo">
+                    <label>RESIDENTIAL ADDRESS  (No PO Boxes or CMRA)</label>
+                    <div>
+                        <input type="text" name="address"  pattern = " " title="Please enter your address" />
+                    </div>
+
+                    <label>SUITE/APT.#    (If applicable)</label>
+                    <div>
+                        <input type="text" name="address" pattern=" " title="Please enter your apt number" />
+                    </div>
+                </div>
+
+                <div id="hovered">
+                    <div class="linked">
+                        <a href="#">-My mailing address is the same as my residential address</a>
+                    </div>
+
+                    <div class="mailing">
+
+                        <label>MAILING ADDRESS  (PO Boxes and CMRA are allowed)</label>
+                        <div>
+                            <input type="text" name="address" title="Please enter your address" />
+                        </div>
+
+                        <label>EMAIL ADDRESS</label>
+                        <div>
+                            <input type="text" name="email" pattern=" " title="Please enter ur email address" />
+                        </div>
+
+
+                        <label>SUITE/APT.#    (If applicable)</label>
+                        <div>
+                            <input type="text" name="address" pattern="" title="Please enter your apt number" />
+                        </div>
+
+                        <label>PRIMARY PHONE NUMBER</label>
+                        <div>
+                            <input type="text" name="phone" pattern=" " title="Please enter ur phone number" />
+                        </div>
+
+                    </div>
+                </div>
+
+                <br/>
+                <hr>
+
+                <p class="headline">Financial Information</p>
+                <div class="financialInfo">
+                    <label>DO YOU HAVE ANY BANK ACCOUNTS?</label>
+                    <div>
+                        <select name="slectVisa">
+                            <!--<option value="" label="Select a type" ></option>-->
+                            <option selected>Checking and Savings</option>
+                            <option>Only Checking</option>
+                            <option>Only Savings</option>
+                            <option>Neither</option>
+                        </select>
+                    </div>
+
+                    <label>TOTAL ANNUAL INCOME</label>
+                    <div>
+                        <input type="text" name="income" pattern=" " title="Please enter your annual income" placeholder="$" />
+                    </div>
+
+                    <label>EMPLOYEMENT STATUS</label>
+                    <div>
+                        <select name="slectEmpl">
+                            <!--<option value="" label="Select a type" ></option>-->
+                            <option>Employed</option>
+                            <option>Self Employed</option>
+                            <option>Retired</option>
+                            <option>Student</option>
+                            <option>Unemployed</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <label>MONTHLY RENT/MORTGAGE</label>
+                    <div>
+                        <input type="text" name="income" pattern=" " title="Please enter your annual income" placeholder="$" />
+                    </div>
+                </div>			
+                <pre>Alimony, child support or separate 
+maintemance income need not be revealed if 
+you do not choose to have it considered as 
+a basis for repaying this loan.	</pre>								
+
+                <input  class= "submit" type = "submit" value = "Submit Form" />
+            </form>
+        </div>
+
+    </body>
+
+</html>

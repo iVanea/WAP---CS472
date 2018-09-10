@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+Try to mimic this form https://applynow.capitalone.com/?productId=4048
+
+Use correct HTML 5 input types, HTML 5 validations, required fields for fields like zip code, ssn, email etc.
+Make use of fieldset and legends for grouping form controls.
+Suggestion:
+First finish html and validation part and start with styling.
+-->
+<html lang = "en">
+	<head>
+		<meta charset = "utf-8" />
+		<title>Apply for a Capital One Card</title>
+		<link href = "style.css" type = "text/css" rel = "stylesheet">
+                <link rel="icon" type="image/ico" href="images/fav.ico"/>
+	</head>
+	
+	<body>
+		<header>
+			<img src = "images/clf.png" alt = "Capital one logo" />
+			<div class = "bar-vertical"></div>
+			<img src = "images/mcl.png" alt = "MasterCard logo" />
+		</header>
+		
+		<div id = "banner">
+			<div class = "top">
+				<img src="images/qso.png" alt="Card Name" />
+				<div class = "bar-vertical"></div>
+				<p>Earn unlimited 1.5% cash back on every purchase, every day</p>
+			</div>
+			<p>
+				<a href = "#"><img src="images/lock.png" alt = "lock picture"/> SECURITY</a>
+				<a href = "#"><img src = "images/question.png" alt = "question picture"/> FAQ</a>
+			</p>
+			<nav class = "summary">View Card Summary</nav>
+		</div>
+		
+		<div id = "content">
+			<nav class = "summary-content">
+				<table>
+					<tr>
+						<td class = "left">PURCHASE APR</td><td class = "right">22.97% - 26.97% variable APR</td>
+						<td class = "left">ANNUAL FEE</td><td class = "right">$39</td>
+					</tr>
+
+					<tr>
+						<td class = "left">TRANSFER INFO</td><td class = "right">22.97% - 26.97% variable APR; No Transfer Fee</td>
+						<td class = "left">BONUS OFFER</td><td class = "right">None</td>
+					</tr>
+					
+					<tr>
+						<td class = "left">REWARDS INFO</td><td class = "right">Earn unlimited 1.5% cash back on every purchase, every day.</td>
+						<td class = "left">CARD NETWORK</td><td class = "right">Mastercard</td>
+					</tr>
+				</table>
+			</nav>
+			<form action = "test.html" method = "post">
+				<div id = "form">
+					<section>
+						<h1>Personal Information</h1>
+						<div class = "img">
+							<input type = "text" value = "" readonly />
+						</div>
+						<div>
+							<label for = "firstname">First Name</label>
+							<input type = "text" name = "firstname" class = "col4">
+						</div>
+						<div>
+							<label for = "middle" >MI</label>
+							<input type = "text" name = "middle" class = "col1" maxlength = "1" pattern = "^[A-Za-z]{1}$">
+						</div>
+						<div>
+							<label for = "lastname">Last Name</label>
+							<input type = "text" name = "lastname" class = "col6">
+						</div>
+						<div>
+							<label for = "birth">Date of Birth</label>
+							<input type = "text" name = "birth" class = "col6" pattern = "^((0[1-9]{1})|(1[0-2]{1}))\/((0[1-9]{1})|([1-2]{1}\d{1})|(3[0-1]{1}))\/([1-2]{1}\d{3})$">
+						</div>
+						<div>
+							<label for = "soc">Social Security Number</label>
+							<input type = "number" name = "soc" class = "col6" pattern = "^\d{3}\-\d{2}\-\d{5}$">
+						</div>
+						<div>
+                                                    <label for = "citizen" class = "radiocheck">Are you a US Citizen?
+                                                            <label><input type = "radio" name = "citizen">  yes</label>
+                                                            <label><input type = "radio" name = "citizen">   no</label> <br/> 
+								<a href = "#">WHY ARE YOU ASKING ME THIS?</a>
+							</label>
+						</div>
+					</section>
+					<section>
+						<h1>Contact Information</h1>
+						<div>
+							<label for = "resident">RESIDENTIAL ADDRESS (No PO Boxes or CMRA)</label>
+							<input type = "text" name = "resident" class = "col8">
+						</div>
+						<div>
+							<label for = "suite">SUITE/APT. # (if applicable)</label>
+							<input type = "text" name = "suite" class = "col6">
+						</div>
+						<div>
+							<a href = "#">- My mailing address is the same as my residential address</a>
+						</div>
+						<div>
+							<label for = "mresident">MAILING ADDRESS (PO Boxes and CMRA are allowed)</label>
+							<input type = "text" name = "mresident" class = "col8">
+						</div>
+						<div>
+							<label for = "msuite">SUITE/APT. # (if applicable)</label>
+							<input type = "text" name = "msuite" class = "col6">
+						</div>
+						<div>
+							<label for = "mail">Email Address</label>
+							<input type = "mail" name = "mail" class = "col7" pattern = "^[a-z]{1}(\w|\-|\.)+\@\w+\.[a-z]{2,4}$">
+						</div>
+						<div>
+							<label for = "phone">Primary Phone Number</label>
+							<input type = "tel" name = "phone" class = "col7" pattern = "^\(\d{3}\)\d{3}\-\d{4}$">
+						</div>
+						<div>
+							<p class = "col7">When you provide your email address, we may use it to send you important information about your application and account(s), as well as other useful products and services.</p>
+							<p class = "col7"> </p>
+						</div>
+					</section>
+					<section>
+						<h1>Financial Information</h1>
+						<div>
+							<label for = "emp">EMPLOYMENT STATUS</label>
+							<select placeholder = "Select a Type" name = "emp" class = "col16">
+								<option>Employed</option>
+								<option>Self-Employed</option>
+								<option>Retired</option>
+								<option>Student</option>
+								<option>Unemployed</option>
+							</select>
+						</div>
+                                                <div>
+							<label for = "acct">DO YOU HAVE ANY BANK ACCOUNTS?</label>
+							<select placeholder = "Select a Type" name = "acct" class = "col7">
+								<option>Checking and Savings</option>
+								<option>Checking Only</option>
+								<option>Savings Only</option>
+								<option>Neither</option>
+							</select>
+						</div>
+						<div>
+							<label for = "income">TOTAL ANNUAL INCOME</label>
+							<input type = "text" name = "income" class = "col7" pattern = "^(1\d{0,}|0)\.\d{2}$">
+						</div>
+						<div>
+							<label for = "monthly">MONTHLY RENT/MORTGAGE</label>
+							<input type = "text" name = "monthly" class = "col7" pattern = "^(1\d{0,}|0)\.\d{2}$">
+						</div>
+						<div>
+							<p class = "col7" ></p>
+							<p class = "col7" id="textleft">Alimony, child support or separate maintenance income need not be revealed if you do not choose to have it considered as a basis for repaying this loan.</p>
+						</div>
+						
+				
+						<div>
+							<label for = "opt">IF OFFERED, WOULD YOU BE INTERESTED IN BLANK CHECKS TO USE FOR CASH ADVANCES?<span>(Optional)</span></label>
+							<label class = "col7"><input type = "radio" name = "opt">yes <input type = "radio" name = "opt">no</label>
+						</div>
+					</section>
+					<section>
+						<h1>Additional Information</h1>
+						<p>We need your agreement to receive by electronic means only communications regarding your application, 
+                                                    including notice of our decision on your application and important account opening information regarding rates, 
+                                                    fees and other costs related to the credit card for which you are applying. Please review the terms
+                                                    of our <span class="underline">Electronic Communications Disclosure.</span></p>
+						<div>
+							<label for = "check">
+								<input type = "checkbox" name = "check">
+								I have reviewed and agree to the terms of the Electronic Communications Disclosure. I confirm that 
+                                                                I have an active email address and the ability to access, view and print PDF files.
+							</label>
+						</div>
+						<p>Some of our communications are available in both English and Spanish. Which language would you prefer for future communications?</p>
+						<div>
+							<label>
+								<input type = "radio" name = "opt">English
+								<input type = "radio" name = "opt">Spanish
+							</label>
+						</div>
+					</section>
+					<section>
+						<h1>Important Disclosures</h1>
+						<a href = "#">Download/Print</a>
+						<p>Before you submit your application, please read through these Important Disclosures,
+                                                which contain additional
+                                                    information about eligibility, rates, fees, and other costs, as applicable.</p>
+						<iframe src = "http://www.google.com"></iframe>
+						<div>
+							<input type = "submit" value = "Continue" class = "col16">
+						</div>
+					</section>
+				</div>
+			</form>
+		</div>
+		<footer></footer>
+	</body>
+	
+</html>

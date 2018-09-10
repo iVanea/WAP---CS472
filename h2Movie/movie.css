@@ -1,0 +1,147 @@
+body{
+    background-image: url('images/background.png');
+    background-repeat: repeat;
+    font-family: Verdana, Tahoma, "sans-serif";
+    font-size: 8pt;
+}
+#banner{
+    background-image: url('images/bannerbg.png');
+    text-align: center;
+}
+header > h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24pt;
+    text-shadow: 3px 3px #999999;
+}
+.info{
+    /*this is right side, under photo with main information about movie*/
+    border: 4px gray solid;
+    border-radius: 20px;
+    width:800px;
+    margin:auto;
+    /*    margin-left:10%;
+        margin-right:10%;*/
+    /*margin-bottom: 0px;*/
+}
+#movie_poster{
+    border-radius:0px 14px 0px 0px;
+}
+
+#right_section{
+    float:right;
+    /*margin-left:550px;*/
+    width: 250px;
+    background-color: #A2B964;
+    border-radius:0px 14px 0px 0px;
+    overflow:hidden;
+}
+
+#right_section dl{
+    padding-left: 4px;
+}
+#validation{
+    float:right;
+    opacity: 0.5;
+    margin-top: -70px;
+}
+
+.bottom-nr-page{
+    text-align: center;
+    background-color: #A2B964;
+    border-radius:0px 0px 14px 14px;
+     vertical-align: middle;
+    /*why doesnot work vertical-align:*/ 
+}
+.bottom-nr-page p{
+    vertical-align: middle;
+    margin: 0px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+#movie_logo{
+    border-radius:14px 0px 0px 0px;
+}
+.percentage{
+    font-weight: bolder;
+    font-size:48pt;
+    color:red;
+    vertical-align: top;
+}
+#rotten{
+    position: absolute;
+    background: url("images/rbg.png") repeat; 
+    height: 83px;
+    border-radius:14px 0px 0px 0px;
+    width:550px;
+}
+.comments{
+    /*position: absolute;*/
+    border-radius:14px 0px 0px 0px;
+    width:550px;
+    column-count: 2;
+    column-gap: 5px;
+    float:left;
+    overflow:auto;
+}
+#columns{
+    margin-top:83px;
+}
+#left-column{
+    float:left;
+}
+#right-column{
+    margin-top:83px;
+    float:left;
+}
+.comments p:nth-child(odd) {
+    border: 2px gray solid;
+    border-radius: 7px;
+    width: 88%;
+    padding: 7px;
+    background-color: #E7DC9A;
+
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.filmCritic{
+    font-style: italic;
+}
+#right-column img, #left-column img{
+    float:left;
+    padding-left:5px;
+    vertical-align: central;
+    padding-right: 5px;
+}
+
+#right-column p, #left-column p{
+   position: relative;
+    overflow: auto;
+}
+.clear {
+    /*clear the proprietes before the page numbers;*/
+    clear: both;
+}
+dl {
+    padding: 10px;
+}
+
+dt {
+    font-weight: bolder;
+}
+
+dd {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+#sized{
+    height: 33px;
+}
+

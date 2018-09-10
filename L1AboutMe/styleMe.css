@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 26, 2018, 2:39:08 PM
+    Author     : 986416
+*/
+
+h1{
+    color: midnightblue;
+    text-align: center;
+    border: 8px dashed yellowgreen;
+}
+
+body{
+    opacity:0.9;
+    background-image: url("images/tree.png");
+    background-repeat: repeat-y;
+    background-position: 300px 300px;
+    font-family: Arial, "Arial Black", Verdana, "Trebuchet MS", Georgia;
+    background-color:darkred;
+}
+
+.header h1{
+    background-color: black;
+    color: white;
+    text-decoration:underline ;
+}
+
+.moods{
+    /*    margin-left: auto;
+        margin-right: auto;*/
+    margin: auto;
+    border: 3px solid green;
+}
+.neighbor>h1{
+    background-color:darkblue;
+    color: black;
+    font-size: 24pt;
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: happy;
+    src: url('font/Happy.ttf');
+}
+@font-face {
+    font-family: sad;
+    src: url('font/BLACK RAIN.ttf');
+}
+#happy{
+    background-color: yellow;
+    font-family: happy;
+    font-size: 2em;
+}
+#sad{
+    background-color: black;
+    color:white;
+    font-family: sad;
+    font-size: 2em;
+}
+.qualities{
+    background-color: yellow;
+    text-decoration: underline;
+    font-size:x-large;
+    text-shadow: -2px -2px gray;
+}
+
+a:link{
+    color:blue;
+    text-decoration: none;
+}
+a:visited{
+    color:gray;
+    text-decoration: overline;
+    font-style: italic;
+}
+a:hover{
+    color:red;
+    text-decoration: underline;
+}
+p:first-letter{
+    font-size: 1.5em;
+}
+dt{
+    color:yellow;
+    font-weight: bold;
+}
+

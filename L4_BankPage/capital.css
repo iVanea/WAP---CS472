@@ -1,0 +1,162 @@
+*{
+    padding: 0px;
+    margin:0px;
+}
+#logoFirst img{
+    height: 38px;
+    /*border :2 px solid white;*/
+    /*border-right: 0.6px black solid;*/
+    padding-top :10px;
+    padding-bottom: 0px;
+    background-color: white;
+}
+#logoFirst .log1 img{
+    border-right: lightgray solid 0.6px
+}
+#logoFirst {
+    background-color: white;
+}
+
+
+#wordsqso{
+    height:55px;
+    width:350px
+}
+#imgsqso{
+    padding-left:200px;
+    float: left;
+}
+#textsqso{
+    float: right;
+}
+.centerButtons{
+    text-align: center;
+    width: 300px;
+    margin:auto;
+}
+body{
+    background-color: white;
+}
+#logoFirst{
+    text-align: center;
+}
+.log2{
+    border-right: 0px;
+}
+.locked img{
+    width:10px;
+    height: 10px;
+}
+.banner{
+    background-image: url('images/qsbg.jpg');
+    background-repeat: repeat-x;
+    background-size: 100% 100%;  
+    color:white;
+    margin-bottom: 0px;
+    padding: auto;  
+    width: auto;
+    background-color: white;
+    
+}
+.viewed{
+    text-align: center;
+}
+.main{
+    width: 900px;
+    margin:auto;
+    /*border: 1px grey solid; */
+    background-color: white;
+    padding: 15px;
+   
+      
+}
+.linked{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+input[type=text]{
+   width :200px;
+   height: 30px;
+   padding:0px;
+   /*margin-top: 6px;*/
+   
+}
+div{
+    margin-bottom:30px;
+    margin-top:5px;
+}
+
+#financial{
+    text-align: center;
+}
+.headline{
+    text-align: center;
+    font-size: 25px;
+    color: darkcyan;
+}
+.mailing{
+    column-count: 2;
+    display:none;
+}
+.contactInfo{
+    column-count: 2;
+}
+.financialInfo{
+    column-count:2;
+}
+.financialInfo input{
+
+   width:420px;
+}
+.firstRow{
+    column-count: 3;
+    width: 620px;
+    
+}
+#visa img{
+    width:200px;
+    height: 120px;
+    float:right;
+   
+}
+#decIM input{
+    width: 70px;
+}
+#decIM{
+    margin-left:80px;
+}
+.secondRow{
+    column-count: 2;
+    width: 620px;
+}
+#hovered:hover .mailing{
+    display:block;
+}
+
+.social input{
+    margin-right:100px;
+    width: 300px;
+}
+/*.date input{
+    width:300px;
+}*/
+.banner::first-letter{
+    font-size: 50px;
+    text-shadow: 2px 2px;
+}
+.submit{
+    color: dimgrey;
+    text-align: center;
+    background-color: grey
+    
+
+}
+input[type="submit"]{
+    position: relative;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+#hidde{
+    visibility:hidden;
+}

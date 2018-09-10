@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+Try to mimic this form https://applynow.capitalone.com/?productId=4048
+
+Use correct HTML 5 input types, HTML 5 validations, required fields for fields like zip code, ssn, email etc.
+Make use of fieldset and legends for grouping form controls.
+Suggestion:
+First finish html and validation part and start with styling.
+-->
+<html>
+    <head>
+        <title>Apply for a Capital One Card</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/ico" href="images/fav.ico"/>
+    </head>
+    <body>
+        <header>
+            <img src="images/clf.png" alt="Capital One" />
+            <img src="images/mcl.png" alt="Master Card" />
+        </header>
+        <header>
+            <div>
+
+                <img src="images/qso.png" alt="Card Name" />
+                <p>Earn unlimited 1.5% cash back on every purchase, every day</p>
+                <p><img src="images/lock.png" alt="lock">SECURITY</p>
+                <p><img src="images/.png" alt="lock">FAQ</p>
+            </div>
+        </header>
+        <div id="summary">
+            <h2>View Card Summary</h2>
+        </div>
+        <div id="hidde">
+            <dl>
+                <dt>PURCHASE APR</dt>
+                <dd>22.97% - 26.97% variable APR</dd>
+
+                <dt>ANNUAL FEE</dt>
+                <dd>$39</dd>
+
+                <dt>TRANSFER INFO</dt>
+                <dd>22.97% - 26.97% variable APR; No Transfer Fee</dd>
+
+                <dt>BONUS OFFER</dt>
+                <dd>None</dd>
+
+                <dt>REWARDS INFO</dt>
+                <dd>Earn unlimited 1.5% cash back on every purchase, every day.</dd>
+
+                <dt>CARD NETWORK</dt>
+                <dd>Mastercard</dd>
+            </dl>
+        </div>
+
+        <div id="personal-info">
+            <h2>Personal Information</h2>
+            <input name="fname"/>
+            <input name="mname"/>
+            <input name="lname"/>
+            <input name="dob"/>
+            <input name="ssn"/>
+            <p>ARE YOU A U.S. CITIZEN? <input type="radio" name="citizen" value="YES"/> YES
+                <input type="radio" name="citizen" value="NO"/> NO</p>
+            <p>WHY ARE YOU ASKING ME THIS?</p>
+
+            <img src="images/qocard.png" alt="Credit Card"/>
+
+        </div>
+
+        <div id="contact-info">
+            <h2> Contact Information</h2>
+            RESIDENTIAL ADDRESS (No PO Boxes or CMRA)
+            <input name="address"/>
+            SUITE/APT. # (if applicable)
+            <input name="apt"/>
+            <p>+ Add mailing address (if different from residential address)</p>
+            <p>- My mailing address is the same as my residential address</p>
+            MAILING ADDRESS (PO Boxes and CMRA are allowed)
+            <input name="maddress"/>
+            SUITE/APT. #
+            <input name="mapt"/>
+            EMAIL ADDRESS
+            <input name="eaddress"/>
+            <p>When you provide your email address, we may use it to send you important information about your application and account(s), as well as other useful products and services.
+            </p>
+            PRIMARY PHONE NUMBER
+            <input name="phone"/>
+
+        </div>
+
+        <div id='financial-info'>
+            <h2>Financial Information</h2>
+            DO YOU HAVE ANY BANK ACCOUNTS?
+            <select name="bankAccount"> 
+                <option>Checking only</option>
+                <option>Saving only</option>
+                <option>Checking and Saving</option> 
+                <option>Neither</option>
+            </select>	 
+            EMPLOYMENT STATUS
+            <select name="status"> 
+                <option>Employed</option>
+                <option>Self-Employed</option>
+                <option>Retired</option> 
+                <option>Student</option>
+                <option>Unemployed</option>
+            </select>	 
+            TOTAL ANNUAL INCOME
+            $<input name="yearTotalIncome"/>
+            Alimony, child support or separate maintenance income need not be revealed if you do not choose to have it considered as a basis for repaying this loan.
+            MONTHLY RENT/MORTGAGE
+            $<input name="MontlyTotalSpent"/>
+            IF OFFERED, WOULD YOU BE INTERESTED IN BLANK CHECKS TO USE FOR CASH ADVANCES?(Optional)
+            YESNO
+            <p>IF OFFERED, WOULD YOU BE INTERESTED IN BLANK CHECKS TO USE FOR CASH ADVANCES?(Optional)
+                <input type="radio" name="cash" value="YES"/> YES
+                <input type="radio" name="cash" value="NO"/> NO</p>
+        </div>
+
+        <div id='additional-info'>
+            <h2>Additional Information</h2>
+            <p>We need your agreement to receive by electronic means only communications 
+                regarding your application, including notice of our decision on your application 
+                and important account opening information regarding rates, fees and other costs 
+                related to the credit card for which you are applying. Please review the terms of 
+                our <span class='underline'>Electronic Communications Disclosure.</span></p>
+
+            <label><input type="checkbox" name="iread" />I have reviewed and agree to 
+                the terms of the Electronic Communications Disclosure. I confirm that 
+                I have an active email address and the ability to access, view and print PDF files.</label>
+            Some of our communications are available in both English and Spanish. 
+            Which language would you prefer for future communications?
+
+            <p>Some of our communications are available in both English and Spanish. 
+                Which language would you prefer for future communications?
+                <input type="radio" name="lang" value="English" checked/> English
+                <input type="radio" name="lang" value="Spanish"/> Spanish</p>
+        </div>
+
+        <div id='important-disclosures'>
+            <h2>Important Disclosures</h2>
+            <a href='https://d25970n8puso9u.cloudfront.net/disclosure.4048.en-US.pdf'> Download/Print</a>
+            <p>Before you submit your application, please read through these Important Disclosures,
+                which contain additional
+                information about eligibility, rates, fees, and other costs, as applicable.</p>
+            <textarea READONLY rows="200" cols="1024"> 
+                <h2>CAPITAL ONE® APPLICATION TERMS</h2>
+Interest Rates and Interest Charges
+Annual Percentage Rate (APR) for Purchases and Transfers	22.97%, 24.97% or 26.97%, based on your creditworthiness.
+This APR will vary with the market based on the Prime Rate.
+APR for Cash Advances	26.97%.
+This APR will vary with the market based on the Prime Rate.
+Paying Interest	Your due date is at least 25 days after the close of each billing cycle. We will not charge you interest on new purchases, provided you have paid your previous balance in full by the due date each month. We will begin charging interest on cash advances on the transaction date.
+For Credit Card Tips from the Consumer Financial Protection Bureau	To learn more about factors to consider when applying for or using a credit card, visit the website of the Consumer Financial Protection Bureau at http://www.consumerfinance.gov/learnmore.
+Fees
+Annual Fee	$39 annually.
+Transaction Fees	 
+Transfer Transaction Fee:
+None.
+Cash Advance Transaction Fee:
+Either $10 or 3% of the amount of each cash advance, whichever is greater.
+Penalty Fees	 
+Late Payment Penalty Fee:
+Up to $38.
+
+Frequently Asked Questions
+How Do You Calculate My Balance?
+We use a method called “average daily balance (including new transactions).” See “How Do You Calculate The Interest Charge?” section below.
+
+What Are My Billing Rights?
+Information on your rights to dispute transactions and how to exercise those rights is provided in the “Your Billing Rights” section in the below Additional Disclosures.
+
+Are There Any Other Penalty Fees Associated With This Card That Are Not Listed In The Box Above?
+No. There are no additional Penalty Fees associated with this card.
+
+What Should I Put For Total Annual Income?
+You may include personal income, which is income you have earned, including full-time, part-time, or seasonal jobs, self-employment, interest or dividends, retirement, and public assistance. You may also include shared income, which is money from somebody else that is regularly deposited into your individual account or into a joint account that person shares with you. If you are 21 or over, you may also include somebody else’s income that is regularly used to pay your expenses.
+
+What Will My APR Be If I Transfer A Balance?
+Any balances you transfer will receive a Transfer APR and post to your account's Purchase segment. Any balances transferred after that date will receive a Purchase APR and post to the Purchase segment of your account unless the transfer is made in connection with a future offer from us.
+
+Can You Change My APRs?
+While a late payment won’t cause your APR to increase, in the future, we may increase your APRs if market conditions change. If we increase your APRs for any reason other than an increase in the Prime Rate, the new APRs will apply only to new transactions you make after we notify you of the change in writing.
+
+Can You Change My Account Terms?
+We can change the terms of your account as permitted by law. When required, we will send you notice before doing so.
+
+How Do You Calculate My Variable Rates?
+Your variable rates may change when the Prime Rate changes. We calculate variable rates by adding a percentage to the Prime Rate published in The Wall Street Journal on the 25th day of each month. If the Journal is not published on that day, then see the immediately preceding edition. Variable rates on the following segment(s) will be updated quarterly and will take effect on the first day of your January, April, July and October billing periods: Purchase APR: Prime plus 17.97%, 19.97% or 21.97%; Transfer APR: Prime plus 17.97%, 19.97% or 21.97%; Cash Advance APR: Prime plus 21.97%. Any increase in the Prime Rate may increase your Interest Charges and your Minimum Payment.
+
+How Do You Determine My Credit Line?
+We will determine your credit line after a review of your application and your ability to pay. If your application is approved, the minimum credit line you will receive is $300.
+
+What Are The Daily Periodic Rates Used To Calculate My Interest?
+The daily periodic rate for your	Purchase APR is 0.06293%, 0.06841% or 0.07389%,	Transfer APR is 0.06293%, 0.06841% or 0.07389%,	and Cash Advance APR is 0.07389%.	See “How Do You Calculate The Interest Charge?” section in the enclosed Additional Disclosures.
+
+How Do You Calculate My Minimum Payment?
+If your balance is less than $25, your minimum payment will be equal to your balance. Otherwise, your minimum payment will be the greater of $25 or 1% of your balance plus new interest, late payment fees, and an amount equal to a full year of membership fees divided by 12. We will also add any past due amount to your minimum payment. If your Account charges off, the entire balance is due immediately.
+
+Mastercard is a registered trademark, and the circles design is a trademark of Mastercard International Incorporated.
+
+THINGS YOU SHOULD KNOW ABOUT THIS REWARDS PROGRAM
+
+How do I earn rewards?
+You will earn 1.5% cash back on net purchases (purchases minus any credits or returns) only. Cash advances, balance transfers, and checks used to access your account are not considered purchases and will not earn rewards.
+
+Will my rewards ever expire?
+Your rewards are yours for the life of the account—they will not expire. But if your account is closed, you will lose any rewards you have not redeemed.
+
+Is there a limit to the amount of rewards I can earn?
+There is no cap to the amount of rewards you can earn on purchases.
+
+How do I redeem my rewards?
+You can get your cash back upon request in the form of a statement credit or a check. You can also set up an automatic redemption preference; options include: (1) at a set time each calendar year or (2) when a specific threshold ($25, $50, $100 or $200) has been reached. Just go online to capitalone.com or contact our Rewards Center. You can also redeem for credits for previous purchases, gift cards, and more. Rates for these redemption options may vary and are subject to change without notice. 
+
+What happens if I do not set up an automatic redemption preference?
+Until you set up an automatic redemption preference, you will receive your cash back upon your request.
+
+How often can I change my automatic redemption preference?
+You may change your automatic redemption preference at any time, but you cannot request an annual redemption to be fulfilled in the same month you make a change. If you have an automatic redemption preference, you may also make upon-request redemptions without interfering with your pre-established automatic redemption preference.
+
+Is my account eligible to transfer rewards?
+Your account may be eligible to transfer rewards. Please be aware that transfers are only permitted between certain Capital One rewards accounts. Not all rewards products are eligible for transfer.
+ADDITIONAL DISCLOSURES & TERMS AND CONDITIONS
+I understand that I am not eligible for this offer if:
+My application is received after this offer expires, is incomplete, unreadable, inaccurate or cannot be verified.
+My address is not in one of the following locations: the 50 United States, Washington, D.C., or a U.S. military location.
+My address is a correctional institution.
+My monthly income (my disclosed total annual income divided by 12) doesn't exceed my monthly rent/mortgage payment by at least $425. Or, Capital One otherwise determines that I am unable to make my monthly payments.
+I am under 18 or do not have a valid Social Security Number or Individual Taxpayer Identification Number.
+I have applied for a Capital One credit card 2 or more times in the last 30 days.
+I have 2 or more open credit card accounts with Capital One.
+I have a past due Capital One credit card account.
+I am over my credit line on a Capital One credit card.
+I have had a Capital One credit card that charged off within the past year.
+I have a non-discharged bankruptcy (one that is still unresolved).
+
+With respect to this offer, I acknowledge that:
+I am not obligated to accept the card or pay any fee or charge unless I use this card.
+Even if I am otherwise eligible for this offer, approval is based upon satisfying Capital One's credit standards.
+Capital One may contact me to obtain or confirm application information.
+I am authorizing Capital One to check my credit and employment history.
+If I am approved, Capital One may contact me regarding my Card and Account as described in my Capital One Customer Agreement. For example, when I give Capital One my mobile telephone number, I agree to receive messages from Capital One and their authorized agents, including prerecorded and text messages. I also consent to receive calls through an automatic telephone dialer (autodialer).
+I will receive the Capital One Customer Agreement. I am bound by its terms and all future revisions.
+This offer is nontransferable.
+I understand that, unless the offer discloses a specific credit line, the exact amount of my credit line will be determined by Capital One after review of my application and other information.
+An applicant, if married, may apply for a separate account.
+Everything I have stated in this application is correct.
+THINGS YOU SHOULD KNOW ABOUT THIS CARD
+When Can I Request A Transfer?
+You may request a transfer 10 days after your account is opened. Your account may not always be eligible for Transfers. Transfer eligibility is determined by Capital One at our discretion. Transfers between Capital One accounts are not permitted. That means balances cannot be transferred to this account from any other credit card issued by Capital One including, but not limited to cards branded with, Kohl’s, Sony, GM, BuyPower Card, Union Plus, and Teamster Privilege.
+
+How Do You Apply My Payment?
+We will apply payments up to your minimum payment first to the balance with the lowest APR (including 0% APR), and then to balances with higher APRs. We apply any part of your payment exceeding your minimum payment to the balance with the highest APR, and then to balances with lower APRs.
+
+How Can I Avoid Paying Interest Charges?
+If you pay your statement’s “New Balance” in full by the due date, we will not charge interest on any new transactions that post to the Purchase balance. If you have been paying your account in full without interest charges, but fail to pay your next “New Balance” in full, we will charge interest on the unpaid balance. For cash advances and transfers, we will start charging interest on the transaction date. From time to time, we may give you offers that allow you to pay less than the total balance and avoid interest charges to new transactions that post to your purchase balance. If we do, we will provide details in the specific offer.
+
+How Is The Interest Charge Applied?
+Interest charges accrue from the 1) date of the transaction, 2) date the transaction is processed or 3) first calendar day of the billing period. Interest charges accrue on every unpaid amount until it is paid in full. This means you may owe interest charges even if you pay the entire “New Balance” one month, but did not do so the previous month. Unpaid interest charges are added to the proper segment of your account. However, we reserve the right to not assess interest charges.
+
+How Do You Calculate The Interest Charge?
+We use a method called Average Daily Balance (including new transactions). Under this method, we first calculate your daily balance; for each segment, 1) take the beginning balance and add in new transactions and the periodic interest charge on the previous day’s balance, then 2) subtract any payments and credits for that segment as of that day. The result is the daily balance for each segment. However, if you paid your previous month’s balance in full (or if your balance was zero or a credit amount), new transactions which post to your purchase or special purchase segments are not added to the daily balances. Also, transactions subject to a grace period are not added to the daily balances.	
+
+Next, to find your Average Daily Balance: 1) add the daily balances together for each segment, and 2) divide the sum by the number of days in the billing cycle.	
+
+At the end of each billing cycle, we determine your Interest Charge as follows: 1) multiply your Average Daily Balance by the daily periodic rate (APR divided by 365) for that segment, and 2) multiply the result by the number of days in the billing period. NOTE: Due to rounding or a minimum interest charge, this calculation may vary from the interest charge actually assessed.
+
+Are Unauthorized Use Or $0 Fraud Liability Claims Subject To Investigation And Verification?
+Yes.
+
+IMPORTANT INFORMATION ABOUT PROCEDURES FOR OPENING A NEW ACCOUNT:
+To help the government fight the funding of terrorism and money laundering activities, Federal law requires all financial institutions to obtain, verify and record information that identifies each	person who opens an account. What this means for you: When you open an account, we will ask for your name, address, date of birth and other information that will allow us to identify you. We may also ask to see your driver’s license or other identifying documents.
+
+MILITARY LENDING ACT NOTICE
+Federal law provides important protections to members of the Armed Forces and their dependents relating to extensions of consumer credit. In general, the cost of consumer credit to a member of the Armed Forces and his or her dependent may not exceed an annual percentage rate of 36 percent. This rate must include, as applicable to the credit transaction or account: The costs associated with credit insurance premiums; fees for ancillary products sold in connection with the credit transaction; any application fee charged (other than certain application fees for specified credit transactions or accounts); and any participation fee charged (other than certain participation fees for a credit card account).
+
+To hear this same disclosure and a general description of your payment obligations for this credit card account, please call us toll-free at: 844-788-8999.
+
+During any period in which the Military Lending Act (“the Act”) applies to you, no provision of your Cardholder Agreement that is inconsistent with the Act shall apply and your Cardholder Agreement shall be interpreted to comply with the Act.
+
+STATE-SPECIFIC INFORMATION
+
+Ohio Residents: Ohio anti-discrimination laws require creditors to make credit equally available to all creditworthy customers and that credit reporting agencies maintain separate credit histories on individuals upon request. The Ohio Civil Rights Commission administers these laws.
+
+New York and Vermont Residents: Capital One may obtain your credit reports, for any legitimate purpose associated with the account or the application or request for an account, including but not limited to reviewing, modifying, renewing and collecting on your account. On your request, you will be informed if such a report was ordered. If so, you will be given the name and address of the consumer reporting agency furnishing the report. New York residents may contact the New York State Department of Financial Services by telephone or visit its website for free information on comparative credit card rates, fees and grace periods. New York State Department of Financial Services: 1-877-226-5697 or http://www.dfs.ny.gov.
+
+Wisconsin Residents: No provision of any marital property agreement, unilateral statement, or court order applying to marital property will adversely affect a creditor’s interests unless, prior to the time credit is granted, the creditor is furnished with a copy of the agreement, statement or court order, or has actual knowledge of the provision. If the credit card for which you are applying is granted, you will notify the Bank if you have a spouse who needs to receive notification that credit has been extended to you.
+
+YOUR BILLING RIGHTS: KEEP THIS DOCUMENT FOR FUTURE USE
+This notice tells you about your rights and our responsibilities under the Fair Credit Billing Act.	
+
+What To Do If You Find A Mistake On Your Statement:
+If you think there is an error on your statement, write to us at:
+
+Capital One, P. O. Box 30279, Salt Lake City, UT 84130-0279
+
+In your letter, give us the following information:
+Account information: Your name and account number.
+Dollar amount: The dollar amount of the suspected error.
+Description of problem: If you think there is an error on your bill, describe what you believe is wrong and why you believe it is a mistake.
+You must contact us:
+Within 60 days after the error appeared on your statement.
+At least 3 business days before an automated payment is scheduled, if you want to stop payment on the amount you think is wrong.
+You must notify us of any potential errors in writing. You may call us or notify us electronically, but if you do we are not required to investigate any potential errors and you may have to pay the amount in question.
+
+What Will Happen After We Receive Your Letter.
+
+When we receive your letter, we must do two things:	
+Within 30 days of receiving your letter, we must tell you that we received your letter. We will also tell you if we have already corrected the error.
+Within 90 days of our receipt of your letter, we will send you a written notice explaining either that we corrected the error (to appear on your next statement) or the reasons we believe the bill is correct.
+While we investigate whether or not there has been an error, the following are true:
+
+We cannot try to collect the amount in question, or report you as delinquent on that amount.
+The charge in question may remain on your statement, and we may continue to charge you interest on that amount.
+While you do not have to pay the amount in question until we send you a notice about the outcome of our investigation, you are responsible for the remainder of your balance.
+We can apply any unpaid amount against your credit limit.
+After we finish our investigation, one of two things will happen:	
+If we made a mistake: You will not have to pay the amount in question or any interest or other fees related to that amount.
+If we do not believe there was a mistake: You will have to pay the amount in question, along with applicable interest and fees. We will send you a statement of the amount you owe and the date payment is due. We may then report you as delinquent if you do not pay the amount we think you owe.
+If you receive our explanation but still believe your bill is wrong, you must write to us within 10 days telling us that you still refuse to pay. If you do so, we cannot report you as delinquent without also reporting that you are questioning your bill. We must tell you the name of anyone to whom we reported you as delinquent, and we must let those organizations know when the matter has been settled between us.
+
+If we do not follow all of the rules above, you do not have to pay the first $50 of the amount you question even if your bill is correct.
+
+Your Rights If You Are Dissatisfied With Your Credit Card Purchases.
+
+If you are dissatisfied with the goods or services that you have purchased with your credit card, and you have tried in good faith to correct the problem with the merchant, you may have the right not to pay the remaining amount due on the purchase. To use this right, all of the following must be true:
+You must have used your credit card for the purchase. Purchases made with cash advances from an ATM or with a check that accesses your credit card account do not qualify; and
+You must not yet have fully paid for the purchase.
+If all of the criteria above are met and you are still dissatisfied with the purchase, contact us in writing at:
+
+Capital One, P. O. Box 30279, Salt Lake City, UT 84130-0279
+
+While we investigate, the same rules apply to the disputed amount as discussed above. After we finish our investigation, we will tell you our decision. At that point, if we think you owe an amount and you do not pay, we may report you as delinquent.
+
+            </textarea>
+
+            
+            <input type='submit'/> 
+        </div>
+<footer>
+    <ul>
+                <li> PRIVACY</li>
+                <li> SECURITY</li>
+                <li> TERMS & CONDITIONS</li>
+                <li> ACCESSIBILITY</li>
+                <li> LEGAL</li>
+    </ul>
+    
+    <img src='images/clf' alt='Capital One'/>
+    <p>©2018 Capital One</p>
+    <img src="images/fdicMember.png" alt="Member FDIC">/ 
+    <p>Equal Housing Lender <img src='images/house.png' alt='house'/></p>
+</footer>
+    </body>
+</html>

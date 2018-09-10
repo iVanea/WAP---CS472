@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 5, 2018, 8:08:39 AM
+    Author     : timotin
+*/
+body{
+    font-family: "Lucida Sans Unicode", Helvetica, Arial, "sans-serif"; 
+    color:#404040;
+    background-color: white;
+    font-size: 11pt;
+    background-image: url('images/silverware.jpg');
+    background-repeat: repeat;
+
+}
+h1, h6{
+    color: #A4A400;
+    font-weight: bold;
+    text-decoration: underline;
+    letter-spacing: 0.25cm;
+    
+    
+}
+h1 span, h6 span{
+    background-color: #F0F0F0;
+}
+h1{
+   text-align: center; 
+   font-size: 22pt;
+}
+h6{
+    font-size:14pt;
+}
+.comments{
+    font-style: italic;
+}
+div.comments>p{
+    position: relative;
+    background-color: #FFFFA8;
+    font-size:80%;
+    font-family: "Times New Roman";
+    width: auto;
+    margin-left:50px;
+    margin-right:50px;
+}
+.mistake{
+    text-decoration: line-through;
+    text-decoration: underline;
+}
+span.evedentiate {
+    font-weight: bold;
+}
+abbr{
+    font-style: oblique;
+    border-bottom: 1px dashed black;
+}
+a{
+    color:#A4A400;
+}
+ul{
+    list-style-image: url('images/pie_icon.gif');
+}
