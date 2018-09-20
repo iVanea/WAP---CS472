@@ -3,6 +3,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -13,6 +14,7 @@ public class LoginServlet extends HttpServlet {
 //        super.doGet(req, resp);
 //        resp.getWriter().println("Login Page");
 
+        /*
         PrintWriter out = resp.getWriter();
         out.print("<html><head><title>Login Page</title></head><body>");
         out.print("<form method='post'>");
@@ -22,12 +24,24 @@ public class LoginServlet extends HttpServlet {
         out.print("<input type='submit' value='Login'/>");
         out.print("</form>");
         out.print("</body></html>");
+        */
+
+        String userName =  req.getParameter("usr");
+        String pass = req.getParameter("pwd");
+        if ("admin".equals(userName) && "1q2w".equals(pass)){
+            HttpSession session = req.getSession();
+            session.setAttribute("userName", userName);
+            resp.sendRedirect("Welcome.jsp");
+        }else{
+            resp.sendRedirect("Login.jsp");
+        }
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
 //        super.doPost(req, resp);
-        String user = req.getParameter("usr");
+
+       /* String user = req.getParameter("usr");
         String passd = req.getParameter("pwd");
         boolean remember = Boolean.valueOf(req.getParameter("remember"));
         req.setAttribute("user",user);
@@ -41,5 +55,6 @@ public class LoginServlet extends HttpServlet {
 
         RequestDispatcher rd = req.getRequestDispatcher("valid");
         rd.forward(req,response);
+        */
     }
 }
