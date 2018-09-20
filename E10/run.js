@@ -67,14 +67,6 @@ $(function () {
     };
 
     function showPostsData(data) {
-//        var json_obj = $.parseJSON(data);
-//        alert(json_obj[0].userId);
-//        var output="<ul>";
-//            for (var i in json_obj) 
-//            {
-//                output+="<li>" + json_obj[i].Language + ",  " + json_obj[i].ID + "</li>";
-//            }
-//            output+="</ul>";
         if (!data[0]) {
             alert("Very bad, this id we don't have data. Try for another id.");
             return 0;
