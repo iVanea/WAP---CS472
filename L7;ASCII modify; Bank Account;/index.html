@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang = "en">
+    <head>
+        <title>Bank Account</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="run.js"></script>
+    </head>
+    <body>
+        <div id="ourTitle">Trust Bank</div>
+        <fieldset id="inputArea">
+            <div>
+                <label id = "lblfirstname">Account Name</label>
+                <input id="acctname" type = "text" name = "acctname" class = "col1">
+            </div>
+            <div>
+                <label id = "lblDeposit" >Deposit</label>
+                <input id="deposit" type = "text" name = "deposit" class = "col2" maxlength = "9" pattern = "^[0-9]{9}$">
+            </div>
+            
+            <div>
+                <button id="create">Create new account</button>
+            </div>
+        </fieldset>
+        <textarea id="text-area" cols="80" rows="20"></textarea>
+        
+        
+<div id="validate">
+    <a href="http://validator.w3.org/check/referer">
+        <img src="http://mumstudents.org/cs472/2013-09/images/w3c-html.png" alt="html validator">
+    </a><br>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png" alt="Valid CSS!"></a><br>
+    <a href="http://webster.cs.washington.edu/jslint?referer">
+        <img src="http://mumstudents.org/jshint/jshint-small.png" alt="JavaScript Lint">
+    </a>
+</div>
+    </body>
+</html>
