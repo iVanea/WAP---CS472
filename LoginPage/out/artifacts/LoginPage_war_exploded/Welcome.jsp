@@ -15,7 +15,7 @@
             margin:auto;
             text-align: center;
         }
-        #name{
+        .name{
            text-transform: capitalize;
         }
         .button {
@@ -49,10 +49,10 @@
 
         <%--<%String name = session.getAttribute("userName").toString();%>--%>
 
-        <h2> Welcome Mr./Mrs. ${userName}<br/></h2>
-        <p>  <span id="name">${userName},</span> we are glad to see you!</p>
+        <h2> Welcome Mr./Mrs. <span class="name">${userName} </span> </h2>
+        <p>  <span class="name">${cookie.userName.value},</span> we are glad to see you!</p>
 
-        <form action="/logout">
+        <form action="/logout" method="post">
           <input type="submit" value="Logout" class="button logout"/>
         </form>
 

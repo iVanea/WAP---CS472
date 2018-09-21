@@ -7,7 +7,7 @@
 
     <servlet>
         <servlet-name>LoginPage</servlet-name>
-        <servlet-class>LoginServlet</servlet-class>
+        <servlet-class>com.login.LoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginPage</servlet-name>
@@ -15,17 +15,8 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>ValidationBred</servlet-name>
-        <servlet-class>Validation</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ValidationBred</servlet-name>
-        <url-pattern>/valid</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
         <servlet-name>WeLogout</servlet-name>
-        <servlet-class>Logout</servlet-class>
+        <servlet-class>com.login.Logout</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>WeLogout</servlet-name>

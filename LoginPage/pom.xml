@@ -13,6 +13,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
+
     <dependencies>
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -25,12 +26,15 @@
             <artifactId>javax.el-api</artifactId>
             <version>3.0.0</version>
             <scope>provided</scope>
+
         </dependency>
         <!-- https://mvnrepository.com/artifact/jstl/jstl -->
         <dependency>
             <groupId>jstl</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
+            <scope>provided</scope>
+
         </dependency>
         <!--Required for Custom Tags -->
         <dependency>
@@ -38,6 +42,15 @@
             <artifactId>javax.servlet.jsp-api</artifactId>
             <version>2.3.1</version>
             <scope>provided</scope>
+
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.apache.tomcat</groupId>-->
+            <!--<artifactId>jasper</artifactId>-->
+            <!--<version>6.0.32</version>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
+
     </dependencies>
+
 </project>
